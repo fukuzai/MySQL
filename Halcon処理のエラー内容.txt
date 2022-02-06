@@ -1,0 +1,1 @@
+tuple_int converts the input tuple T into a tuple of integer numbers by truncating T. The conversion of a string is not allowed.
