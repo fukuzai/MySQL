@@ -85,21 +85,21 @@ namespace MySQL
             HTuple hv_integer = new HTuple();
             HTuple hv_string = new HTuple();
             
-            double a  = Convert.ToDouble(textBox1.Text);
+            //double a  = Convert.ToDouble(textBox1.Text);
             
-            hv_Input = a;
+            hv_Input = 1;
 
             hv_double = hv_Input.D; //実数型
             label4.Text = hv_double.ToString();
             
             //hv_integer = hv_double.TupleInt();
 
-            HOperatorSet.TupleInt(hv_Input[0], out hv_integer);
-            hv_integer = hv_Input[0].L; //整数型
+            //HOperatorSet.TupleInt(hv_Input[0], out hv_integer);
+            hv_integer = hv_Input.I; //整数型
             label5.Text = hv_integer.ToString();
 
-            HOperatorSet.TupleIsString(hv_Input, out hv_string);
-            //hv_string = hv_Input.S; //文字列
+            //HOperatorSet.TupleIsString(hv_Input, out hv_string);
+            hv_string = hv_Input.S; //文字列
             label6.Text = hv_string.ToString();
             
         }
